@@ -12,39 +12,8 @@
             min-height: 100vh;
             background-color: #fff0f5;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
-        .container {
-            position: relative;
+        .card {
             width: 300px;
-            height: 450px;
-        }
-        .image {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transition: opacity 2s;
-        }
-        .image.second {
-            opacity: 0;
-        }
-        .image.show {
-            opacity: 1;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Ảnh trái tim hiện lên trước -->
-        <img src="heart-image.jpg" class="image first" alt="Ảnh Trái Tim">
-        <!-- Ảnh lời chúc sẽ hiện lên sau -->
-        <img src="valentine-message.jpg" class="image second" alt="Ảnh Lời Chúc">
-    </div>
-
-    <script>
-        // Sau 3 giây thì chuyển sang ảnh lời chúc
-        setTimeout(() => {
-            document.querySelector('.second').classList.add('show');
-        }, 3000);
-    </script>
-</body>
-</html>
+    
