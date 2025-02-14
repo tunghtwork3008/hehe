@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine Card</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff0f5;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 450px;
+        }
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: opacity 2s;
+        }
+        .image.second {
+            opacity: 0;
+        }
+        .image.show {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <div class="card" onclick="openCard()">
-        <div class="front">
-            <img src="front.jpg" alt="Happy Valentine's Day">
-        </div>
-        <div class="inside">
-            <img src="inside.jpg" alt="Lời chúc Valentine">
-        </div>
+    <div class="container">
+        <!-- Ảnh trái tim hiện lên trước -->
+        <img src="heart-image.jpg" class="image first" alt="Ảnh Trái Tim">
+        <!-- Ảnh lời chúc sẽ hiện lên sau -->
+        <img src="valentine-message.jpg" class="image second" alt="Ảnh Lời Chúc">
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        // Sau 3 giây thì chuyển sang ảnh lời chúc
+        setTimeout(() => {
+            document.querySelector('.second').classList.add('show');
+        }, 3000);
+    </script>
 </body>
 </html>
