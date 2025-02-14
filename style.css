@@ -63,11 +63,11 @@ body {
 .inside {
     transform: rotateY(180deg);
     z-index: 2;
+    backface-visibility: hidden;
 }
 
-.card.open .front {
-    transform: rotateY(180deg);
-    z-index: 1;
+.card.open .inside {
+    transform: rotateY(0deg);
 }
 
 .card.open .inside {
