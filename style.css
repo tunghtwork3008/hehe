@@ -62,7 +62,7 @@ body {
 
 .inside {
     transform: rotateY(180deg);
-    z-index: ;
+    z-index: 2;
 }
 
 .card.open .front {
