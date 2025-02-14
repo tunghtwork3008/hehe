@@ -63,7 +63,6 @@ body {
 .inside {
     transform: rotateY(180deg);
     z-index: 2;
-    backface-visibility: hidden;
 }
 
 .card.open .inside {
