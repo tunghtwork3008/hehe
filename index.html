@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine Card</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #fff0f5;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .card {
-            width: 300px;
-    
+    <!-- Link đến file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card" onclick="openCard()">
+        <div class="card-inner">
+            <!-- Ảnh trái tim (hiện lên trước) -->
+            <div class="card-face front">
+                <img src="heart-image.jpg" alt="Ảnh Trái Tim">
+            </div>
+            <!-- Ảnh lời chúc (hiện lên sau khi lật thẻ) -->
+            <div class="card-face inside">
+                <img src="valentine-message.jpg" alt="Ảnh Lời Chúc">
+            </div>
+        </div>
+    </div>
+    <!-- Link đến file JS -->
+    <script src="script.js"></script>
+</body>
+</html>
